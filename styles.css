@@ -1,0 +1,221 @@
+/* Resetando o estilo para todos os elementos da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui o padding e a borda no tamanho total do elemento */
+}
+
+ /* Estilo para a barra de rolagem */
+    /* Selecionando a barra de rolagem no Chrome, Safari e outros navegadores baseados no Webkit */
+    ::-webkit-scrollbar {
+        width: 12px; /* Largura da barra de rolagem */
+        height: 12px; /* Altura da barra de rolagem horizontal */
+      }
+  
+      /* Cor e estilo da "pista" da barra de rolagem */
+      ::-webkit-scrollbar-track {
+        background-color: #060910; /* Cor do fundo da barra de rolagem */
+        border-radius: 10px;
+      }
+  
+      /* Cor e estilo da "cabeça" da barra de rolagem */
+      ::-webkit-scrollbar-thumb {
+        background-color: #060910; /* Cor do polegar da barra de rolagem */
+        border-radius: 10px;
+        border: 3px solid #0b5aae; /* Borda ao redor da "cabeça" */
+      }
+  
+      /* Cor do polegar da barra de rolagem quando estiver sendo arrastado */
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #060910; /* Cor do polegar quando estiver sendo usado */
+        border: 3px solid #0b5aae; /* Borda ao redor do polegar quando estiver sendo usado */
+      }
+  
+      /* Estilo opcional para barras de rolagem horizontais */
+      ::-webkit-scrollbar-horizontal {
+        height: 10px;
+      }
+  
+      /* Defina o estilo para a área onde você quer a rolagem */
+      body {
+        height: 2000px; /* Apenas para garantir que a rolagem aconteça */
+        margin: 0;
+        padding: 0;
+      }
+
+/* Definindo uma fonte padrão para o site */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #060910; /* Cor de fundo do corpo */
+    line-height: 1.6;
+    color: #ffffff; /* Cor do texto */
+    
+
+}
+
+/* Cabeçalho, com a saudação */
+#greets {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #060910; /* Cor de fundo azul */
+    color: white;
+}
+
+#greets h1 {
+    font-size: 2rem;
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    margin-top: -150px; /* Espaçamento acima do título */
+   
+}
+
+#greets span {
+    color: #0b5aae; /* Cor para destaque no nome */
+}
+
+/* Estilizando a imagem do banner */
+#greets {
+    display: flex;
+    justify-content: center;  /* Centraliza a imagem horizontalmente */
+    align-items: center;      /* Centraliza a imagem verticalmente */
+    height: 100vh;            /* Faz com que o elemento ocupe toda a altura da tela */
+}
+
+#greets img {
+    width: 300px;             /* Define o tamanho da imagem */
+    height: 300px;            /* Define a altura da imagem */
+    border-radius: 50%;       /* Faz a imagem ficar redonda */
+    border: 10px solid #0b5aae; /* Adiciona a borda de cor #38b6ff */
+    object-fit: cover;        /* Garante que a imagem se ajuste ao tamanho da caixa sem distorcer */
+}
+
+
+#greets p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;        /* Espaçamento acima do parágrafo */
+    margin-left: 20px;
+    font-size: 1.5rem;
+    margin-top: 2px;
+
+}
+
+/* Seção sobre mim */
+#a-me {
+    background-color: #060910;  /* Cor de fundo azul */
+    padding: 50px 20px; /* Espaçamento interno */
+    color: #ffffff;
+    background-color: #0E101E;  /* Cor de fundo azul */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -70px;
+   
+}
+
+#a-me h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0b5aae;
+    text-align: center;
+}
+
+#a-me p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+
+}
+
+/* Seção de projetos */
+#prj {
+    background-color: #060910;
+    padding: 50px 20px;
+    
+}
+
+#prj h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #0b5aae;
+    
+}
+
+/* Grid de projetos */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Faz a grid responsiva */
+    gap: 20px;
+    
+}
+
+.project-item {
+    background-color: #191919;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url(Fundo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease-in-out; /* Transição suave */
+   
+}
+.project-item:hover {
+    transform: scale(1.1); /* Aumenta a caixa em 10% */
+}
+
+.project-item h3 {
+    font-size: 1.8rem;
+    color: #0b5aae;
+}
+
+.project-item p {
+    font-size: 1rem;
+}
+
+/* Seção de tecnologias */
+#tech {
+    padding: 50px 20px;
+    background-color: #060910;
+    color: #0b5aae;
+    text-align: center;
+}
+
+#tech img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #090241;
+    color: #0b5aae;
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+    background-color: #060910;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-image: url(Fundo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease-in-out; /* Transição suave */
+}
+footer span p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0b5aae;
+}
+
+footer p {
+    font-size: 1.0rem;
+}
+
