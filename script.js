@@ -14,3 +14,4 @@ window.addEventListener("scroll", function() {
     header.style.top = "0";
   }
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Evita valores negativos
+});
